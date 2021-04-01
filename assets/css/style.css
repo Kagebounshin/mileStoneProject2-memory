@@ -26,17 +26,14 @@ h1 {
     position: relative;
 } 
 
-.home-container p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
+ /* .home-container p {
+     font-size: 1.1rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: -250px;
     color: white;
-    text-shadow: 2px 2px 2px  black, 5px 5px 5px #76ceac;
-    text-align: center;
-    position: relative;
-    top: 45%;
     
-}
+}  */
 
 .uppercase {
     text-transform: uppercase;
@@ -54,6 +51,10 @@ h1 {
     position: absolute;
     right: 0px;
     top: 0px; 
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
     animation-name: animationScale;
     animation-duration: 6s;
     overflow: hidden;
@@ -61,18 +62,77 @@ h1 {
 
 #menu {
     min-height: 100%;
-    width: 400px;
-    background-color: rgba(0, 0, 0, .8);
-    border: 15px solid rgba(255, 255, 255, 1);
+    width: 600px;
+    background-color: rgba(0, 0, 0, .6);
+    border: 15px solid rgba(255, 255, 255, .6);
     border-top: 0px;
     border-bottom: 0px;
     position: absolute;
     top: 0px;
-    right: 150px;
+    right: 100px;
 }
 
 #kim-menu {
     position: relative;
     z-index: 2;
     border: 15px solid rgba(0, 0, 0, .8);
+    margin-top: 200px;
+    margin-left: -200px;
+
 }
+
+#menu-name {
+    font-size: 1.2rem;
+    margin-left: -25px;
+}
+#menu-conversation {
+    font-size: 1.1rem;
+    padding-left: 80px;
+    padding-right: 60px;
+    margin-top: -300px;
+    color: white;
+}
+
+#menu-answer {
+    color: orangered;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-left: 80px;
+    padding-right: 60px;
+}
+
+#menu-nr-answer {
+    color: white;
+    margin-left: -25px;
+}
+
+#menu-answer2 {
+    color: orangered;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-left: 80px;
+    padding-right: 60px;
+    margin-top: -20px;
+}
+
+#menu-nr-answer2 {
+    color: white;
+    margin-left: -25px;
+}
+
+#menu-answer3 {
+    color: orangered;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-left: 80px;
+    padding-right: 60px;
+    margin-top: -20px;
+}
+
+#menu-nr-answer3 {
+    color: white;
+    margin-left: -25px;
+}
+
+
+
