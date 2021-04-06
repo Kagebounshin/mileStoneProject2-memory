@@ -1,4 +1,4 @@
-<h1 align="center">Code Institute Website</h1>
+<h1 align="center">MEMORY GAME</h1>
 
 [View the live project here.]()
 
@@ -7,6 +7,7 @@
 ## User Experience (UX)
 
 -   ### User stories
+
 
 -   ### Design
 
@@ -25,9 +26,10 @@
 
 ### Frameworks, Libraries & Programs Used
 
+- [jQuery](https://jquery.com/)
 - [Bootstrap v5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 - [Hover.css](https://ianlunn.github.io/Hover/) - Hover effect on buttons.
-
+- [fontAwesome](https://fontawesome.com/) - provides icons across the site. 
 
 ## Testing
 
@@ -103,6 +105,10 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Media
 
+- [Background](https://nordic.ign.com/disco-elysium/30263/review/disco-elysium-review) image is from IGN Nordic, the image was illustrated by [ZA/UM Studio](https://discoelysium.com/).
+
+- The game cards was obtained from [Disco Elysium Wiki](https://disco-elysium-archive.fandom.com/wiki/Disco_Elysium_Wiki).
 
 ### Acknowledgements
 
+- The layout inspration for this README.md is from Code Institute's own [Sample README](https://github.com/Code-Institute-Solutions/SampleREADME).
