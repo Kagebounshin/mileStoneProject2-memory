@@ -61,7 +61,7 @@ body {
     margin-top: .6rem;
 } 
 
-/* MENU */
+/* MENU HOMEPAGE*/
 
 
 .menu {
@@ -137,6 +137,12 @@ body {
     .home-container {
         max-width: 95%;
     }
+
+    .gameboard {
+        height: 250px;
+        width: 250px;
+    }
+    
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -144,6 +150,11 @@ body {
     
     .home-container {
         max-width: 80%;
+    }
+
+    .gameboard {
+        height: 400px;
+        width: 400px;
     }
 }
 
@@ -153,6 +164,10 @@ body {
     .home-container {
         max-width: 60%;
     }
+    .gameboard {
+        height: 600px;
+        width: 600px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -160,6 +175,11 @@ body {
 
     .home-container {
         max-width: 40%;
+    }
+
+    .gameboard {
+        height: 600px;
+        width: 600px;
     }
 }
 
@@ -193,4 +213,23 @@ body {
 .text-white {
     color: #ffffff;
 }
+
+/* GAMEAREA STYLING */
+.game-container {
+    min-height: 100vh;
+}
+
+.gameboard {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px solid white;
+}
+
+.bg-color-gameboard {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+
 
