@@ -12,16 +12,12 @@ body {
     overflow-x: hidden;
     background-color: teal;
     background: url(../img/ridingTheHorse.jpg);
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center; 
+    background-repeat: no-repeat;  
+    background-size: cover; 
 }
 
 /* BACKGROUND COLORS */
-
-/* .bg-color-menu {
-    
-} */
 
 .bg-color-home {
     background-color: rgba(0, 0, 0, .8);
@@ -35,6 +31,7 @@ body {
     border: 10px solid white;
     border-top: 0;
     border-bottom: 0;
+    overflow: auto;
     
 }
 
@@ -45,6 +42,11 @@ body {
     border-bottom: 10px solid white;
 }
 
+.navbar a {
+    font-size: 1.5rem;
+    float: right;
+}
+
 .navbar-toggler-icon {
     border: none;
 }
@@ -52,27 +54,11 @@ body {
 
 .navbar h1 {
     font-family: 'Passion One', sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #ffffff;
     text-align: center;
     position: relative;
-} 
-
-/* BACKGROUND IMAGES */
-
- .hero-image {
-     position: absolute;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    right: 0px;
-    top: 0px; 
-    /* background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    animation-name: animationScale;
-    animation-duration: 6s;
-    overflow-x: hidden;
+    margin-top: .6rem;
 } 
 
 /* MENU */
@@ -105,6 +91,11 @@ body {
     font-weight: 600;
     color: orangered;
     padding-left: 10px;
+    cursor: pointer;
+}
+
+.menu-answer-box:hover {
+    color: #ff45009c;
 }
 
 .menu-button {
@@ -129,6 +120,11 @@ body {
 }
 
 .hvr-sweep-to-bottom:before {
+    background: rgba(0, 0, 0, 0.2);
+    height: 3rem;
+}
+
+.hvr-sweep-to-top:before {
     background: rgba(0, 0, 0, 0.2);
     height: 3rem;
 }
