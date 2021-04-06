@@ -11,17 +11,20 @@ body {
     padding: 0;
     overflow-x: hidden;
     background-color: teal;
-
+    background: url(../img/ridingTheHorse.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 /* BACKGROUND COLORS */
 
-.bg-color-menu {
+/* .bg-color-menu {
     
-}
+} */
 
 .bg-color-home {
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .8);
 }
 
 /* CONTAINERS */
@@ -38,37 +41,39 @@ body {
 /* NAVBAR */
 
 .navbar {
-    z-index: 1;
-    background-color: white;
-    box-shadow: 10px, 10px, 10px, 10px, #000000;
+    background-color: rgba(0, 0, 0, .8);
+    border-bottom: 10px solid white;
+}
+
+.navbar-toggler-icon {
+    border: none;
 }
 
 
 .navbar h1 {
     font-family: 'Passion One', sans-serif;
     font-size: 1rem;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
     position: relative;
 } 
 
 /* BACKGROUND IMAGES */
 
-/* .hero-image {
+ .hero-image {
+     position: absolute;
     width: 100%;
     margin: 0;
     padding: 0;
-    position: absolute;
     right: 0px;
     top: 0px; 
-    background-position: center center;
+    /* background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: cover; */
     animation-name: animationScale;
     animation-duration: 6s;
-    overflow: hidden;
-} */
+    overflow-x: hidden;
+} 
 
 /* MENU */
 
@@ -78,7 +83,7 @@ body {
     border-top: 0;
     border-bottom: 0;
     min-height: 100vh;
- 
+    z-index: 100;
 }
 
 .menu-conversation {
@@ -96,10 +101,38 @@ body {
 }
 
 .menu-answer-box {
-    padding: 10px 10px 0px 10px;
-    
-  
+    margin-bottom: -15px;
+    font-weight: 600;
+    color: orangered;
+    padding-left: 10px;
 }
+
+.menu-button {
+    background-color: orangered;
+    color: white;
+    border: none;
+    text-align: left;
+    width: 100%;
+    height: 3rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu-button p {
+    margin-left: 1rem;
+}
+
+.menu-button i {
+    margin-left: 1rem;
+}
+
+.hvr-sweep-to-bottom:before {
+    background: rgba(0, 0, 0, 0.2);
+    height: 3rem;
+}
+
 
 /* MEDIA */
 /* Small devices (landscape phones, 576px and down) */
@@ -157,4 +190,11 @@ body {
     text-transform: uppercase;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: #ffffff;
+}
 
