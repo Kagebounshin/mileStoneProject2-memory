@@ -2,137 +2,159 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Passion+One:wght@400;700;900&display=swap');
 
-body {
-    overflow: hidden;
-   margin: 0;
-   padding: 0;
+html {
+    scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: teal;
+
+}
+
+/* BACKGROUND COLORS */
+
+.bg-color-menu {
+    
+}
+
+.bg-color-home {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+/* CONTAINERS */
 
 .home-container {
     min-height: 100vh;
+    max-width: 100%;
+    border: 10px solid white;
+    border-top: 0;
+    border-bottom: 0;
     
 }
+
+/* NAVBAR */
+
 .navbar {
     z-index: 1;
-    background-color: rgba(0, 0, 0, .2);
+    background-color: white;
     box-shadow: 10px, 10px, 10px, 10px, #000000;
 }
-h1 {
+
+
+.navbar h1 {
     font-family: 'Passion One', sans-serif;
-    font-size: 2rem;
-    color: white;
+    font-size: 1rem;
+    color: #000000;
     text-align: center;
     position: relative;
 } 
 
- /* .home-container p {
-     font-size: 1.1rem;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-top: -250px;
-    color: white;
-    
-}  */
+/* BACKGROUND IMAGES */
 
-.uppercase {
-    text-transform: uppercase;
-}
-
-@keyframes animationScale {
-    from { transform: scale(1.1);}
-    to { transform: scale(1);}
-}
-
-.hero-image {
+/* .hero-image {
     width: 100%;
     margin: 0;
     padding: 0;
     position: absolute;
     right: 0px;
     top: 0px; 
-    background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     animation-name: animationScale;
     animation-duration: 6s;
     overflow: hidden;
-}
+} */
 
-#menu {
-    min-height: 100%;
-    width: 600px;
-    background-color: rgba(0, 0, 0, .6);
-    border: 15px solid rgba(255, 255, 255, .6);
-    border-top: 0px;
-    border-bottom: 0px;
-    position: absolute;
-    top: 0px;
-    right: 100px;
-}
+/* MENU */
 
-#kim-menu {
+
+.menu {
     position: relative;
-    z-index: 2;
-    border: 15px solid rgba(0, 0, 0, .8);
-    margin-top: 200px;
-    margin-left: -200px;
-
+    border-top: 0;
+    border-bottom: 0;
+    min-height: 100vh;
+ 
 }
 
-#menu-name {
-    font-size: 1.2rem;
-    margin-left: -25px;
-}
-#menu-conversation {
-    font-size: 1.1rem;
-    padding-left: 80px;
-    padding-right: 60px;
-    margin-top: -300px;
+.menu-conversation {
+    display: flexbox;
     color: white;
+    float: left;
+    position: relative;
+    padding: 10px 10px 0px 10px;
+    
+    
 }
 
-#menu-answer {
-    color: orangered;
-    font-size: 1rem;
-    font-weight: 600;
-    padding-left: 80px;
-    padding-right: 60px;
+.kim-menu {
+    border: 10px solid rgba(0, 0, 0, .8);
 }
 
-#menu-nr-answer {
-    color: white;
-    margin-left: -25px;
+.menu-answer-box {
+    padding: 10px 10px 0px 10px;
+    
+  
 }
 
-#menu-answer2 {
-    color: orangered;
-    font-size: 1rem;
-    font-weight: 600;
-    padding-left: 80px;
-    padding-right: 60px;
-    margin-top: -20px;
+/* MEDIA */
+/* Small devices (landscape phones, 576px and down) */
+@media (max-width: 576px) {
+    
+    .home-container {
+        max-width: 95%;
+    }
 }
 
-#menu-nr-answer2 {
-    color: white;
-    margin-left: -25px;
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    
+    .home-container {
+        max-width: 80%;
+    }
 }
 
-#menu-answer3 {
-    color: orangered;
-    font-size: 1rem;
-    font-weight: 600;
-    padding-left: 80px;
-    padding-right: 60px;
-    margin-top: -20px;
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    
+    .home-container {
+        max-width: 60%;
+    }
 }
 
-#menu-nr-answer3 {
-    color: white;
-    margin-left: -25px;
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .home-container {
+        max-width: 40%;
+    }
 }
 
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    
+}
+
+/* ANIMATIONS */
+
+@keyframes animationScale {
+    from { transform: scale(1.1);}
+    to { transform: scale(1);}
+}
+
+/* ADDITIONAL STYLING */
+
+.uppercase {
+    text-transform: uppercase;
+}
 
 
