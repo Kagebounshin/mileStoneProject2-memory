@@ -6,3 +6,23 @@
 // A timer and a move count.
 // an alert message with the amount of time it took and the move count maybe a star rating depending on how many moves. 
 
+
+// the game timer
+// Maybe set the timer to start after the first move?
+
+// Array tha holds the cards
+
+var gameCards = [];
+
+
+var seconds = 0;
+var timer = document.getElementById("time");
+
+function gameTimer() {
+        setInterval(function() {
+            timer.innerHTML = "Time: " + seconds;
+            seconds++;
+        },1000);
+}
+
+gameTimer();
