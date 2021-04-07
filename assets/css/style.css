@@ -35,6 +35,10 @@ body {
 
 /* NAVBAR */
 
+/* TO DO 
+Remove hover effect on dropdown menu items.
+Make the dropdown menu arrow more visable. */
+
 .navbar {
     /* background-color: rgba(0, 0, 0, .8); */
     background-color: transparent;
@@ -101,6 +105,11 @@ body {
 
 /* MENU HOMEPAGE*/
 
+/* TO DO
+Make some animation for the menu onload, 
+so it will be more interesting. */
+
+
 
 .menu {
     position: relative;
@@ -114,8 +123,6 @@ body {
     float: left;
     position: relative;
     padding: 10px 10px 0px 10px;
-    
-    
 }
 
 .kim-menu {
@@ -204,10 +211,6 @@ body {
         height: 600px;
         width: 600px;
     }
-    .kim-menu {
-    border: 10px solid rgba(0, 0, 0, .8);
-    margin-left: -1000;
-    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -255,6 +258,12 @@ body {
 }
 
 /* GAMEAREA STYLING */
+
+/* TO DO 
+Make the cards appear. 
+Make so the cards will fit inside across devices. */
+
+
 .game-container {
     min-height: 100vh;
 }
