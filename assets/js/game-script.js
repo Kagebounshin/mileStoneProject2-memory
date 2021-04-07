@@ -6,13 +6,17 @@
 // A timer and a move count.
 // an alert message with the amount of time it took and the move count maybe a star rating depending on how many moves. 
 
+// Array tha holds the cards
+
+var gameCards = ['assets/img/cards/cuno.jpg'];
+
 
 // the game timer
 // Maybe set the timer to start after the first move?
+//  if (moves === 1) {
+//      gameTimer();
+//  } Like so. 
 
-// Array tha holds the cards
-
-var gameCards = [];
 
 
 var seconds = 0;
