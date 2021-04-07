@@ -30,7 +30,23 @@ body {
     max-width: 100%;
     border: 10px solid white;
     overflow: auto;
-    
+}
+
+.game-container h1 {
+    font-family: 'Passion One', sans-serif;
+    font-size: 3.5rem;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.game-container span,
+.game-container p {
+     font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 /* NAVBAR */
@@ -183,7 +199,6 @@ so it will be more interesting. */
 
     .gameboard {
         height: 250px;
-        width: 250px;
     }
     
 }
@@ -197,7 +212,6 @@ so it will be more interesting. */
 
     .gameboard {
         height: 400px;
-        width: 400px;
     }
 }
 
@@ -209,7 +223,6 @@ so it will be more interesting. */
     }
     .gameboard {
         height: 600px;
-        width: 600px;
     }
 }
 
@@ -222,7 +235,6 @@ so it will be more interesting. */
 
     .gameboard {
         height: 600px;
-        width: 600px;
     }
 }
 
@@ -274,6 +286,7 @@ Make so the cards will fit inside across devices. */
     top: 50%;
     transform: translate(-50%, -50%);
     border: 10px solid white;
+    width: 90%;
 }
 
 .bg-color-gameboard {
