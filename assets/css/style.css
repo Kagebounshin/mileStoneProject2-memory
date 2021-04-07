@@ -29,8 +29,6 @@ body {
     min-height: 100vh;
     max-width: 100%;
     border: 10px solid white;
-    border-top: 0;
-    border-bottom: 0;
     overflow: auto;
     
 }
@@ -38,17 +36,18 @@ body {
 /* NAVBAR */
 
 .navbar {
-    background-color: rgba(0, 0, 0, .8);
-    border-bottom: 10px solid white;
+    /* background-color: rgba(0, 0, 0, .8); */
+    background-color: transparent;
 }
 
 .navbar a {
     font-size: 1.5rem;
-    float: right;
+    
 }
 
 .navbar-toggler-icon {
     border: none;
+    box-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -59,15 +58,52 @@ body {
     text-align: center;
     position: relative;
     margin-top: .6rem;
+    text-shadow: 2px 2px 4px #000000;
 } 
+
+.navbar-dark .navbar-toggler {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+    border-color: transparent;
+}
+
+.navbar-toggler-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 2%;
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.navbar-toggler:hover {
+    color: white;
+}
+
+
+
+/* To change the color of the burger icon, https://www.geeksforgeeks.org/how-to-change-hamburger-toggler-color-in-bootstrap/ */
+
+.custom-toggler .navbar-toggler-icon {
+            background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
 
 /* MENU HOMEPAGE*/
 
 
 .menu {
     position: relative;
-    border-top: 0;
-    border-bottom: 0;
     min-height: 100vh;
     z-index: 100;
 }
@@ -167,6 +203,10 @@ body {
     .gameboard {
         height: 600px;
         width: 600px;
+    }
+    .kim-menu {
+    border: 10px solid rgba(0, 0, 0, .8);
+    margin-left: -1000;
     }
 }
 
