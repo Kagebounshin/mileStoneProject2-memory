@@ -8,7 +8,13 @@
 
 // Array tha holds the cards
 
-var gameCards = ['assets/img/cards/cuno.jpg'];
+var gameCards = ['cuno.jpg'];
+
+var gameBoard = document.getElementsByClassName("cards");
+function gameCards () {
+    gameboard.innerHTML = gameCards[0];
+}
+gameCards();
 
 
 // the game timer
