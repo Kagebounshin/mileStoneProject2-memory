@@ -14,26 +14,36 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg navbar-dark justify-content-end">
         <div class="container-fluid">
             <a class="navbar-brand" href="#index.html">
                 <h1>THE DISCO ELYSIUM MEMORY</h1>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#index.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="#index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about.html">About the Disco</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#gamePage.html">Memory</a>
-                    </li>
+                    <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Memory
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#"> <button class="menu-button hvr-sweep-to-bottom">
+                                <p>4 Pairs <i class="fas fa-caret-right"></i></p>
+                            </button></a></li>
+            <li><a class="dropdown-item" href="#"><button class="menu-button hvr-sweep-to-top">
+                                <p>8 Pairs <i class="fas fa-caret-right"></i></p>
+                            </button></a></li>
+          </ul>
+        </li>
                 </ul>
             </div>
         </div>
@@ -42,19 +52,19 @@
     <!-- /NAVBAR -->
 
     <!-- HOME / MENU -->
-    <div class="container home-container bg-color-home">
+    <div class="container home-container bg-color-home mt-5 mb-5">
         <div class="row">
             <div class="col menu bg-color-menu mt-5 mb-5">
 
                 <div class="row justify-content-center">
                     <div class="col">
                         <img src="assets/img/cards/kimKitsuragi.jpg" class="kim-menu">
-
-                        <p class="menu-conversation"><span class="menu-name">KIM KITSURAGI - </span>"Detective!" He's
+                    <p class="menu-conversation"><span class="menu-name">KIM KITSURAGI - </span>"Detective!" He's
                             voice
                             sounds
                             concerned. "Are you okey? Why did you sleep in the dumpster" He sighs. "Can you remember
                             anything about the case?" He looks at you with disappointment in his eyes. </p>
+                           
                     </div>
                 </div>
 
