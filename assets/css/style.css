@@ -27,9 +27,7 @@ body {
 
 .home-container {
     min-height: 100vh;
-    max-width: 100%;
     border: 10px solid white;
-    overflow: auto;
 }
 
 .game-container h1 {
@@ -90,7 +88,7 @@ Make the dropdown menu arrow more visable. */
 .navbar-toggler-icon {
     width: 40px;
     height: 40px;
-    border-radius: 2%;
+    border-radius: 50%;
     color: white;
 }
 
@@ -128,7 +126,7 @@ so it will be more interesting. */
 
 
 .menu {
-    position: relative;
+    position: absolute;
     min-height: 100vh;
     z-index: 100;
 }
@@ -143,6 +141,7 @@ so it will be more interesting. */
 
 .kim-menu {
     border: 10px solid rgba(0, 0, 0, .8);
+    
 }
 
 .menu-answer-box {
@@ -205,10 +204,6 @@ so it will be more interesting. */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    
-    .home-container {
-        max-width: 80%;
-    }
 
     .gameboard {
         height: 400px;
@@ -219,8 +214,22 @@ so it will be more interesting. */
 @media (min-width: 768px) {
     
     .home-container {
-        max-width: 60%;
+        max-width: 400px!important;
+        position: relative;
     }
+
+    .kim-menu {
+        border: 10px solid rgba(0, 0, 0, .8);
+        position: absolute;
+        left: -200px;
+        z-index: 1;
+    }
+    
+    .gameChoice-container {
+        position: initial;
+        margin-top: 140px;
+    }
+    
     .gameboard {
         height: 600px;
     }
@@ -229,13 +238,10 @@ so it will be more interesting. */
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
-    .home-container {
-        max-width: 40%;
-    }
-
     .gameboard {
         height: 600px;
     }
+
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
